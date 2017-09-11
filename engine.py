@@ -2,9 +2,9 @@
 ##dict of response for each type of intent
 intent_response_dict = {
     "intro": ["This is a GST FAQ bot. One stop-shop to all your GST related queries"],
-    "greet":["hey","hello","hi"],
-    "goodbye":["bye","It was nice talking to you","see you","ttyl"],
-    "affirm":["cool","I know you would like it"]
+    "greet":["Hey","Hello","Hi"],
+    "goodbye":["Bye","It was nice talking to you","See you","ttyl"],
+    "affirm":["Cool","I know you would like it"]
 
 }
 
