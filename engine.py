@@ -17,8 +17,8 @@ gstinfo_response_dict = {
 gst_query_value_dict = {
     "12%":"Non-AC hotels, business class air ticket, frozen meat products, butter, cheese, ghee, dry fruits in packaged form, animal fat, sausage, fruit juices, namkeen and ketchup",
     "5%":"railways, air travel, branded paneer, frozen vegetables, coffee, tea, spices, kerosene, coal, medicines",
-    "18%":"AC hotels that serve liquor, telecom services, IT services, flavoured refined sugar, pasta, cornflakes, pastries and cakes",
-    "28%":"5-star hotels, race club betting,wafers coated with choclate, pan masala and aerated water",
+    "18%":"AC hotels that serve liquor, telecom services, IT services, flavored refined sugar, pasta, cornflakes, pastries and cakes",
+    "28%":"5-star hotels, race club betting,wafers coated with chocolate, pan masala and aerated water",
     "exempt":"education, milk, butter milk, curd, natural honey, fresh fruits and vegetables, flour, besan"
 }
 

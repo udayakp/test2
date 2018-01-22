@@ -1,23 +1,23 @@
 {
-    "pipeline": [
-        "nlp_spacy",
-        "tokenizer_spacy",
-        "intent_featurizer_spacy",
-        "intent_entity_featurizer_regex",
-        "ner_crf",
-        "ner_synonyms",
-        "intent_classifier_sklearn"
-    ],
     "spacy_model_name": "en",
-    "training_data": "training_data.json",
-    "rasa_nlu_version": "0.9.2",
-    "regex_featurizer": null,
-    "trained_at": "20170909-164343",
+    "trained_at": "20180113-052934",
     "language": "en",
     "intent_classifier_sklearn": "intent_classifier.pkl",
+    "rasa_nlu_version": "0.10.6",
+    "pipeline": [
+        "rasa_nlu.utils.spacy_utils.SpacyNLP",
+        "rasa_nlu.tokenizers.spacy_tokenizer.SpacyTokenizer",
+        "rasa_nlu.featurizers.spacy_featurizer.SpacyFeaturizer",
+        "rasa_nlu.featurizers.regex_featurizer.RegexFeaturizer",
+        "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor",
+        "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper",
+        "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier"
+    ],
+    "training_data": "training_data.json",
     "entity_synonyms": "entity_synonyms.json",
     "entity_extractor_crf": {
-        "BILOU_flag": true,
+        "version": 1,
+        "model_file": "crf_model.pkl",
         "crf_features": [
             [
                 "low",
@@ -46,7 +46,7 @@
                 "pos2"
             ]
         ],
-        "model_file": "crf_model.pkl",
-        "version": 1
-    }
+        "BILOU_flag": true
+    },
+    "regex_featurizer": null
 }
